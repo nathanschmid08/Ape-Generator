@@ -40,20 +40,63 @@
             margin-bottom: 20px;
         }
 
-
         h1 {
             text-align: center;
             font-family: 'Monkey', sans-serif;
             font-size: 2.5rem;
             margin-bottom: 1rem;
-
             color: #e1bee7;
-
             -webkit-text-fill-color: #e1bee7;
-
             -webkit-text-stroke: 1px #000;
-
             text-rendering: optimizeLegibility;
+            line-height: 1.2;
+        }
+
+        /* Responsive Design für H1 */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+                line-height: 1.1;
+            }
+            
+            h1::after {
+                content: "\A";
+                white-space: pre;
+            }
+        }
+
+        .title-wrapper {
+            display: none;
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                display: none;
+            }
+            
+            .title-wrapper {
+                display: block;
+                text-align: center;
+                font-family: 'Monkey', sans-serif;
+                margin-bottom: 1rem;
+                color: #e1bee7;
+                -webkit-text-fill-color: #e1bee7;
+                -webkit-text-stroke: 1px #000;
+                text-rendering: optimizeLegibility;
+            }
+            
+            .title-main {
+                display: block;
+                font-size: 2rem;
+                line-height: 1;
+                margin-bottom: 0.2rem;
+            }
+            
+            .title-sub {
+                display: block;
+                font-size: 1.4rem;
+                line-height: 1;
+            }
         }
 
         p {
@@ -145,6 +188,12 @@
     <main>
         <img class="icon" src="icons/icon.svg" alt="icon">
         <h1>APE GENERATOR</h1>
+        
+        <!-- Responsive Lösung -->
+        <div class="title-wrapper">
+            <span class="title-main">APE</span>
+            <span class="title-sub">GENERATOR</span>
+        </div>
 
         <p>
             Just simply upload a picture and see what kind of mokey you are.
