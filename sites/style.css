@@ -1,0 +1,16 @@
+html {
+    background-color: #ffffff;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: sans-serif;
+    color: #111;
+    margin: 0;
+    padding: 2rem;
+}
+
+main {
+    max-width: 600px;
+    margin: auto;
+}
