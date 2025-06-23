@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Monkey';
+    src: url('../font/monkey.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
     background-color: #ffffff;
 }
@@ -8,9 +15,91 @@ body {
     color: #111;
     margin: 0;
     padding: 2rem;
+    line-height: 1.6;
 }
 
 main {
     max-width: 600px;
     margin: auto;
+}
+
+header {
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#home {
+    background-color: #f8f8f8;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 16px;
+    font-weight: normal;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #007AFF;
+    text-decoration: none;
+}
+
+#home:hover {
+    opacity: 0.7;
+}
+
+#home i {
+    font-size: 16px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Monkey', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #e1bee7;
+    -webkit-text-fill-color: #e1bee7;
+    -webkit-text-stroke: 1px #000;
+    text-rendering: optimizeLegibility;
+    line-height: 1.2;
+}
+
+h1 i {
+    font-size: 5rem;
+}
+
+/* Responsive Design für H1 */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+        line-height: 1.1;
+    }
+}
+
+p {
+    color: #444;
+    margin-bottom: 1.5rem;
+    font-size: 16px;
+    text-align: left;
+}
+
+/* Add some spacing and visual hierarchy */
+body > p:not(:last-child) {
+    margin-bottom: 1.8rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+    body {
+        padding: 1rem;
+    }
+    
+    p {
+        font-size: 15px;
+    }
+    
+    p:last-of-type {
+        font-size: 16px;
+    }
 }
