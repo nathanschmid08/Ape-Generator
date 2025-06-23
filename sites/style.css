@@ -31,7 +31,7 @@ header {
 }
 
 #home {
-    background-color: #f8f8f8;
+    background-color: #ffffff;
     border: none;
     border-radius: 8px;
     padding: 8px 12px;
@@ -65,15 +65,27 @@ h1 {
     line-height: 1.2;
 }
 
-h1 i {
-    font-size: 5rem;
-}
-
 /* Responsive Design für H1 */
 @media (max-width: 480px) {
     h1 {
         font-size: 2rem;
         line-height: 1.1;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        flex-direction: column;
+    }
+
+    h1 i {
+        font-size: 3rem; /* optional: größer auf Mobile */
     }
 }
 
