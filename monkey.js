@@ -3,49 +3,49 @@ const affen = [
         name: 'Gorilla',
         beschreibung: 'Stark, ruhig, dunkle Farben. Du wirkst wie ein stiller Beobachter.',
         bild: 'monkeys/gorilla.jpeg',
-        link: 'https://de.wikipedia.org/wiki/Gorilla'
+        link: 'https://en.wikipedia.org/wiki/Gorilla'
     },
     {
         name: 'Orang Utan',
         beschreibung: 'Lässig, etwas wild, warmes Farbspektrum. Passt perfekt zu dir!',
         bild: 'monkeys/orangutan.jpeg',
-        link: 'https://de.wikipedia.org/wiki/Gorilla'
+        link: 'https://en.wikipedia.org/wiki/Orangutan'
     },
     {
         name: 'Schimpanse',
         beschreibung: 'Sehr ausgeglichen, normale Farben, durchschnittliche Proportionen.',
         bild: 'monkeys/schimpanse.jpeg',
-        link: 'https://de.wikipedia.org/wiki/Gorilla'
+        link: 'https://en.wikipedia.org/wiki/Chimpanzee'
     },
     {
         name: 'Nasenaffe',
         beschreibung: 'Langes Gesicht erkannt! Du hast eindeutig Nasenaffe-Vibes.',
         bild: 'monkeys/nasenaffe.jpeg',
-        link: 'https://de.wikipedia.org/wiki/Gorilla'
+        link: 'https://en.wikipedia.org/wiki/Proboscis_monkey'
     },
     {
         name: 'Mandrill',
         beschreibung: 'Starke Farben und hoher Kontrast. Mandrill-Level erreicht!',
         bild: 'monkeys/mandrill.jpeg',
-        link: 'https://de.wikipedia.org/wiki/Gorilla'
+        link: 'https://en.wikipedia.org/wiki/Mandrill'
     },
     {
         name: 'Plumploris',
         beschreibung: 'Kleine Größe, sanfte Farben, du bist eher zurückhaltend wie ein Plumploris.',
         bild: 'monkeys/plumploris.jpeg',
-        link: 'https://de.wikipedia.org/wiki/Gorilla'
+        link: 'https://en.wikipedia.org/wiki/Slow_loris'
     },
     {
         name: 'Bonobo',
         beschreibung: 'Sehr soziale Ausstrahlung erkannt – ein typischer Bonobo!',
         bild: 'monkeys/',
-        link: 'https://de.wikipedia.org/wiki/Gorilla'
+        link: 'https://en.wikipedia.org/wiki/Bonobo'
     },
     {
         name: 'Pavian',
         beschreibung: 'Kräftige Struktur, markante Züge – das schreit nach Pavian!',
         bild: 'monkeys/',
-        link: 'https://de.wikipedia.org/wiki/Gorilla'
+        link: 'https://en.wikipedia.org/wiki/Baboon'
     }
 ];
 

@@ -1,9 +1,11 @@
-Gorilla
-Orang Utan
-Schimpanse
-Nasenaffe
-Mandrill
-Plumploris
+Deutsch         Englisch
 
-Bonobo
-Pavian
+Gorilla         Gorilla
+Orang Utan      Orangutan
+Schimpanse      Chimpanzee
+Nasenaffe       Proboscis monkey
+Mandrill        Mandrill
+Plumploris      Slow loris
+
+Bonobo          Bonobo
+Pavian          Baboon
