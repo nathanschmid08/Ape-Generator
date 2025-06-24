@@ -2,42 +2,50 @@ const affen = [
     {
         name: 'Gorilla',
         beschreibung: 'Stark, ruhig, dunkle Farben. Du wirkst wie ein stiller Beobachter.',
-        bild: 'monkeys/gorilla.jpeg'
+        bild: 'monkeys/gorilla.jpeg',
+        link: 'https://de.wikipedia.org/wiki/Gorilla'
     },
     {
         name: 'Orang Utan',
         beschreibung: 'Lässig, etwas wild, warmes Farbspektrum. Passt perfekt zu dir!',
-        bild: 'monkeys/orangutan.jpeg'
+        bild: 'monkeys/orangutan.jpeg',
+        link: 'https://de.wikipedia.org/wiki/Gorilla'
     },
     {
         name: 'Schimpanse',
         beschreibung: 'Sehr ausgeglichen, normale Farben, durchschnittliche Proportionen.',
-        bild: 'monkeys/schimpanse.jpeg'
+        bild: 'monkeys/schimpanse.jpeg',
+        link: 'https://de.wikipedia.org/wiki/Gorilla'
     },
     {
         name: 'Nasenaffe',
         beschreibung: 'Langes Gesicht erkannt! Du hast eindeutig Nasenaffe-Vibes.',
-        bild: 'monkeys/nasenaffe.jpeg'
+        bild: 'monkeys/nasenaffe.jpeg',
+        link: 'https://de.wikipedia.org/wiki/Gorilla'
     },
     {
         name: 'Mandrill',
         beschreibung: 'Starke Farben und hoher Kontrast. Mandrill-Level erreicht!',
-        bild: 'monkeys/mandrill.jpeg'
+        bild: 'monkeys/mandrill.jpeg',
+        link: 'https://de.wikipedia.org/wiki/Gorilla'
     },
     {
         name: 'Plumploris',
         beschreibung: 'Kleine Größe, sanfte Farben, du bist eher zurückhaltend wie ein Plumploris.',
-        bild: 'monkeys/plumploris.jpeg'
+        bild: 'monkeys/plumploris.jpeg',
+        link: 'https://de.wikipedia.org/wiki/Gorilla'
     },
     {
         name: 'Bonobo',
         beschreibung: 'Sehr soziale Ausstrahlung erkannt – ein typischer Bonobo!',
-        bild: 'monkeys/'
+        bild: 'monkeys/',
+        link: 'https://de.wikipedia.org/wiki/Gorilla'
     },
     {
         name: 'Pavian',
         beschreibung: 'Kräftige Struktur, markante Züge – das schreit nach Pavian!',
-        bild: 'monkeys/'
+        bild: 'monkeys/',
+        link: 'https://de.wikipedia.org/wiki/Gorilla'
     }
 ];
 
@@ -101,25 +109,35 @@ function analysiereBildUndVergleiche(imgElement) {
 function zeigeAffeVergleich(userImgSrc, affe) {
     const preview = document.getElementById('preview');
     preview.innerHTML = '';
-
+  
     const userImg = document.createElement('img');
     userImg.src = userImgSrc;
     userImg.style.maxWidth = '45%';
     userImg.style.margin = '10px';
-
+  
     const affeImg = document.createElement('img');
     affeImg.src = affe.bild;
     affeImg.style.maxWidth = '45%';
     affeImg.style.margin = '10px';
-
+  
     const text = document.createElement('p');
     text.textContent = `Du bist ein ${affe.name}! ${affe.beschreibung}`;
     text.style.fontSize = '18px';
     text.style.marginTop = '15px';
-
+  
+    const link = document.createElement('a');
+    link.href = affe.link;
+    link.target = '_blank';
+    link.textContent = `Mehr über den ${affe.name} erfahren →`;
+    link.style.display = 'inline-block';
+    link.style.marginTop = '10px';
+    link.style.fontSize = '16px';
+    link.style.color = '#1a73e8';
+  
     preview.appendChild(userImg);
     preview.appendChild(affeImg);
     preview.appendChild(text);
+    preview.appendChild(link);
 }
 
 // Hook in bestehende Logik einbauen
