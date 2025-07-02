@@ -65,6 +65,61 @@ h1 {
     line-height: 1.2;
 }
 
+.mokeyprev {
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem 2rem;
+    max-width: 600px;          
+    margin: 2rem auto 0 auto;  
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    font-family: 'Monkey', sans-serif;
+    color: #444;
+    transition: transform 0.2s ease;
+    cursor: default;
+}
+
+.mokeyprev + .mokeyprev {
+    margin-top: 2.5rem;       
+}
+
+.mokeyprev h3 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    color: #e1bee7;
+    -webkit-text-fill-color: #e1bee7;
+    -webkit-text-stroke: 1px #000;
+    text-rendering: optimizeLegibility;
+}
+
+.mokeyprev img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    display: block;
+    margin: 0 auto;
+}
+
+.mokeyprev:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Mobile Responsive */
+@media (max-width: 640px) {
+    .mokeyprev {
+        padding: 1rem 1.2rem;
+        margin: 2rem 1rem 0 1rem;
+        max-width: 100%;  
+    }
+
+    .mokeyprev h3 {
+        font-size: 1.2rem;
+    }
+}
+
 /* Responsive Design für H1 */
 @media (max-width: 480px) {
     h1 {
@@ -85,7 +140,7 @@ h1 {
     }
 
     h1 i {
-        font-size: 3rem; /* optional: größer auf Mobile */
+        font-size: 3rem; 
     }
 }
 
@@ -96,12 +151,10 @@ p {
     text-align: left;
 }
 
-/* Add some spacing and visual hierarchy */
 body > p:not(:last-child) {
     margin-bottom: 1.8rem;
 }
 
-/* Mobile responsiveness */
 @media (max-width: 480px) {
     body {
         padding: 1rem;
